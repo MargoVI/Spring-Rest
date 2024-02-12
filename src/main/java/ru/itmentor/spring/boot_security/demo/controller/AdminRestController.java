@@ -25,8 +25,8 @@ public class AdminRestController {
     }
 
     @GetMapping()
-    public List<User> showAll() {
-        return userService.allUsers();
+    public ResponseEntity<List<User>> showAll() {
+        return ResponseEntity.ok(userService.allUsers());
     }
 
     @DeleteMapping("/{id}")
