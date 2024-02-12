@@ -33,7 +33,7 @@ public class User implements UserDetails {
     @Email
     private String email;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.LAZY) //можно стереть ()
     @Fetch(value = FetchMode.JOIN)
     @JoinTable(
             name = "t_user_roles",
