@@ -15,7 +15,7 @@ import ru.itmentor.spring.boot_security.demo.service.UserServiceImpl;
 public class UserController {
     private final UserService userService;
     @Autowired
-    public UserController(UserServiceImpl userService) {
+    public UserController(UserService userService) {
         this.userService = userService;
     }
 
